@@ -1,0 +1,51 @@
+.appmain {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .moi {
+    padding: 20px 0;
+  }
+  
+  .brands {
+    margin-bottom: 40px;
+  }
+  
+  .brand-logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+  }
+  
+  .brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .brand img:hover {
+    transform: scale(1.1);
+  }
+  
+  .brand span {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .available {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,53 @@
+.cont {
+    margin-top: 20px;
+  }
+  
+  .cardss {
+    transition: transform 0.2s;
+  }
+  
+  .cardss:hover {
+    transform: scale(1.05);
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-by-number-plate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .number-plate-input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .number-plate-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .number-plate-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .common-accessory-card {
+    width: 100%; /* Make the card width 100% to be responsive */
+    padding: 10px; /* Decreased padding */
+    transition: transform 0.2s;
+  }
+  
+  .common-accessory-card:hover {
+    transform: scale(1.05);
+  }

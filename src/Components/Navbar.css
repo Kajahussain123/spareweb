@@ -7,17 +7,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
 }
-
 .logo img {
   height: 40px;
 }
-
 .search-bar {
   flex: 1;
   margin: 0 20px;
   position: relative;
 }
-
 .search-bar input {
   width: 100%;
   padding: 8px 40px 8px 20px;
@@ -25,7 +22,6 @@
   border-radius: 20px;
   font-size: 16px;
 }
-
 .search-bar .search-icon {
   position: absolute;
   top: 50%;
@@ -33,47 +29,78 @@
   transform: translateY(-50%);
   color: #ccc;
 }
-
 .icons {
   display: flex;
   align-items: center;
 }
-
 .icons .icon {
   margin-left: 20px;
   font-size: 20px;
   color: black;
   cursor: pointer;
 }
-
 .custom-dropdown .dropdown-toggle::after {
   display: none; /* Hide the dropdown toggle arrow */
 }
-
 /* Responsive styles */
 @media (max-width: 768px) {
   .search-bar {
     width: 100%;
     margin: 10px 0;
   }
-
   .icons {
     width: 100%;
     justify-content: space-around;
     margin-top: 10px;
   }
 }
-
 @media (max-width: 480px) {
   .custom-navbar {
     flex-direction: column;
   }
-
   .search-bar input {
     padding: 8px 20px;
   }
-
   .search-bar .search-icon {
     right: 20px;
   }
+}
+.brand-suggestions {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 999;
+  width: calc(100% - 40px); /* Adjust as needed */
+}
+.heading {
+  margin-bottom: 10px;
+}
+.heading p {
+  font-weight: bold;
+}
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.brand {
+  flex: 0 0 calc(12.5% - 10px); /* Each brand takes 12.5% width with 10px spacing */
+  margin-bottom: 20px;
+  text-align: center;
+}
+.brand img {
+  width: 100%; /* Image takes full width of its container */
+  max-width: 100px; /* Adjust as needed */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.brand span {
+  display: block; /* Ensure the brand name is on a new line */
+  font-size: 12px;
+  text-align: center;
 }

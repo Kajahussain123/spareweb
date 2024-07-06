@@ -190,3 +190,75 @@
     font-weight: bold;
   }
   
+  .search-by-vehicle {
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    background-color: #613AB4;
+    padding: 10px;
+  }
+  .search-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .highlight {
+    color: #00BFFF;
+  }
+  .search-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #613AB4;
+  }
+  .search-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px; /* Adjust the width as per your design */
+  }
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+  .search-by-number-plate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .number-plate-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  .number-plate-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .search-form {
+      flex-direction: column;
+    }
+    .search-by-number-plate {
+      flex-direction: column;
+    }
+    .number-plate-input {
+      width: 40%;
+    }
+  }
+  
+  

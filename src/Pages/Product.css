@@ -1,0 +1,503 @@
+/* VerticalImageCarousel.css */
+.carousel-container {
+    max-width: 500px;
+    /* Adjust the width as needed */
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-dots.slick-thumb {
+    position: absolute;
+    top: 30%;
+    left: -150px;
+    /* Adjust this value to place the selector further left */
+    transform: translateY(-50%);
+    width: 120px;
+    /* Adjust width for thumbnails */
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slick-dots.slick-thumb li {
+    margin: 40px 0;
+    /* Increased spacing between thumbnails */
+}
+
+.slick-dots.slick-thumb li img {
+    width: 100px;
+    /* Adjusted thumbnail size */
+    height: auto;
+    cursor: pointer;
+   
+    padding: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.slick-dots.slick-thumb li.slick-active img {
+   
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: 10px;
+        /* Adjusted position for smaller screens */
+    }
+
+    .slick-dots.slick-thumb li img {
+        width: 80px;
+        /* Adjusted thumbnail size for smaller screens */
+    }
+}
+
+/* Other CSS styles... */
+
+
+.product-details {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    font-size: small;
+    background-color: #fff;
+    margin-top: -5%;
+}
+
+.product-details h4 {
+    font-size: 18px;
+}
+
+.price-section,
+.rating-section,
+.product-options,
+.product-description,
+.ratings-reviews {
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 24px;
+    color: #000000;
+}
+
+.shipping {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.rating {
+    font-size: 24px;
+}
+
+.stars {
+    color: #f1c40f;
+}
+
+.review-count {
+    font-size: 12px;
+    color: #323ad8;
+}
+
+.product-options label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-option {
+    width: 100px;
+    height: 100px;
+
+    border: 1px solid #ccc;
+}
+
+.color-option.teal {
+    background-color: teal;
+}
+
+.color-option.dark-blue {
+    background-color: rgb(35, 35, 122);
+}
+
+.color-option.red {
+    background-color: rgb(225, 50, 50);
+}
+
+.color-option.yellow {
+    background-color: rgb(245, 167, 49);
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.add-to-cart,
+.buy-now {
+    display: block;
+
+    padding: 10px;
+
+    width: 36%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.buy-now {
+    background-color: rgb(6, 97, 97);
+    color: white;
+
+}
+
+.product-description ul {
+
+    padding: 0;
+}
+
+.product-description ul li {
+    padding: 5px 0;
+}
+
+.ratings-reviews h2 {
+    margin-top: 20px;
+}
+
+.review-summary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.average-rating {
+    font-size: 54px;
+}
+
+.review-bars {
+    flex-grow: 1;
+}
+
+.review-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.review-bar span {
+    width: 30px;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background-color: #3FBAA5;
+}
+
+.fill2 {
+    height: 100%;
+    background-color: #F7B020;
+}
+
+.fill3 {
+    height: 100%;
+    background-color: #03A8EC;
+}
+
+.fill4 {
+    height: 100%;
+    background-color: #F66100;
+}
+
+.customer-review {
+    display: flex;
+    margin-top: 20px;
+    align-items: flex-start;
+    /* Added to align the image with the content */
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Added to make the image circular */
+}
+
+.review-content {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    /* Added margin to separate header and text */
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-right: 8px;
+    /* Added spacing between name and date */
+}
+
+.review-text {
+    line-height: 1.5;
+    /* Added line height for better readability */
+}
+
+.review-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.review-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    /* Increased font size for better visibility */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .color-options {
+        width: 70%;
+
+    }
+
+    .abbutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+    .color-options {
+        width: 70%;
+
+    }
+
+    .quantity-selector {
+        width: 50%;
+    }
+
+    .carousel-slide img {
+        width: 80%;
+        margin-left: 20%;
+
+    }
+
+    .slick-dots.slick-thumb {
+        position: absolute;
+        top: 30%;
+        left: -100px;
+        /* Adjust this value to place the selector further left */
+        transform: translateY(-50%);
+        width: 190px;
+        /* Adjust width for thumbnails */
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slick-dots.slick-thumb li {
+        margin: 45px 0;
+        /* Increased spacing between thumbnails */
+    }
+
+    .slick-dots.slick-thumb li img {
+        width: 100px;
+        /* Adjusted thumbnail size */
+        height: auto;
+        cursor: pointer;
+       
+        padding: 2px;
+        
+    }
+
+    .slick-dots.slick-thumb li.slick-active img {
+     
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+
+    .color-options {
+        width: 70%;
+
+    }
+
+    .quantity-selector {
+        width: 50%;
+    }
+
+    .carousel-slide img {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+
+    }
+
+    .slick-dots.slick-thumb {
+        position: absolute;
+        top: 30%;
+        left: -100px;
+        /* Adjust this value to place the selector further left */
+        transform: translateY(-50%);
+        width: 100px;
+        /* Adjust width for thumbnails */
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .slick-dots.slick-thumb li {
+        margin: 45px 0;
+        /* Increased spacing between thumbnails */
+    }
+
+    .slick-dots.slick-thumb li img {
+        width: 100px;
+        /* Adjusted thumbnail size */
+        height: auto;
+        cursor: pointer;
+       
+        padding: 2px;
+      
+    }
+
+    .slick-dots.slick-thumb li.slick-active img {
+       
+        padding: 0px;
+    }
+}
+
+/* Media queries */
+@media only screen and (max-width: 768px) {
+    .carousel-slide img {
+        width: 80%;
+        margin-left: 15%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: -35%;
+        width: 70%;
+    }
+    .col2{
+        margin-left: 2%;
+    }
+}
+@media only screen and (max-width: 680px) {
+    .carousel-slide img {
+        width: 78%;
+        margin-left: 23%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: -38%;
+        width: 80%;
+        top: 30%;
+    }
+    .slick-dots.slick-thumb li {
+        margin: 40px 0;
+        /* Increased spacing between thumbnails */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .carousel-slide img {
+        width: 78%;
+        margin-left: 23%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: -38%;
+        width: 80%;
+        top: 20%;
+    }
+    .slick-dots.slick-thumb li {
+        margin: 40px 0;
+        /* Increased spacing between thumbnails */
+    }
+}
+@media only screen and (max-width: 490px) {
+    .carousel-slide img {
+        width: 68%;
+        margin-left: 27%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: -38%;
+        width: 80%;
+        top: 20%;
+    }
+    .slick-dots.slick-thumb li {
+        margin: 35px 0;
+        /* Increased spacing between thumbnails */
+    }
+}
+@media only screen and (max-width: 440px) {
+    .carousel-slide img {
+        width: 58%;
+        margin-left: 27%;
+    }
+
+    .slick-dots.slick-thumb {
+        left: -38%;
+        width: 80%;
+        top: 13%;
+    }
+    .slick-dots.slick-thumb li {
+        margin: 23px 0;
+        /* Increased spacing between thumbnails */
+    }
+}

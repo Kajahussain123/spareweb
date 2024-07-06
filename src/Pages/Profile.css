@@ -1,0 +1,229 @@
+/* 
+
+.profile-app {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+aside {
+  flex: 7 0 280px;
+  max-width: 360px;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.profile-card-text h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.profile-card-text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.profile-account-info-card h3,
+.profile-payments-card h3 {
+  color: #333;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside li {
+  padding: 0.5rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.profile-active {
+  color: #00A0E0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-edit-link {
+  color: #00A0E0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.profile-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.profile-account-info-card .profile-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile-account-info-card .profile-card-icon {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  color: #555;
+}
+
+.profile-account-info-card h3,
+.profile-payments-card h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.profile-account-info-card ul,
+.profile-payments-card ul {
+  padding-left: 2rem;
+  margin: 0;
+}
+
+.profile-account-info-card li,
+.profile-payments-card li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.profile-card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card-icon {
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  color: #555;
+}
+
+.profile-info-card input {
+  width: 70%;
+  max-width: 300px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: #F5F5F5;
+}
+
+.profile-info-card input::placeholder {
+  color: #888;
+}
+
+.profile-info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info-card .profile-form-group {
+  width: 70%;
+  max-width: 244px;
+  margin-bottom: 1rem;
+}
+
+.profile-info-card .profile-form-group.profile-full-width {
+  width: 100%;
+  max-width: 244px;
+}
+
+.profile-info-card .profile-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  main {
+      flex-direction: column;
+  }
+  aside {
+      max-width: 100%;
+  }
+  .profile-form-row {
+      flex-direction: column;
+  }
+  .profile-info-card .profile-form-group,
+  .profile-info-card .profile-form-group.profile-full-width {
+      width: 100%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .profile-info-card .profile-form-group {
+      width: 157%;
+  }
+} */
