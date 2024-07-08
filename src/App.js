@@ -15,7 +15,6 @@ import RegisterPage from './Pages/Register';
 import BikeBrand from './Pages/BikeBrand';
 import CarBrand from './Pages/CarBrand';
 import BikeYear from './Pages/BikeYears';
-import Parts from './Pages/Parts';
 import OTPVerificationPage from './Pages/OTPVerification';
 import PaySuccess from './Pages/PaySuccess';
 import Accessories from './Pages/Accessories';
@@ -29,6 +28,9 @@ import MyVehicle from './Pages/MyVehicle';
 import PrivacyPolicy from './Pages/PrivacyPolicy';
 import HelpForm from './Pages/HelpForm';
 import MyOrders from './Pages/MyOrders';
+import CarCategory from './Pages/CarCategory';
+import BikeCategory from './Pages/BikeCategory';
+import CarYear from './Pages/CarYear';
 
 
 
@@ -49,7 +51,7 @@ function App() {
         <Route path="/bikebrand/:brandId" element={<BikeBrand />} />
         <Route path="/carbrand/:brandId" element={<CarBrand />} />
         <Route path="/bikeyear" element={<BikeYear />} />
-        <Route path="/parts" element={<Parts />} />
+        <Route path="/caryear" element={<CarYear />} />
         <Route path="/otp-verification" element={<OTPVerificationPage />} />
         <Route path="/paysuccess" element={<PaySuccess />} />
         <Route path="/accessories" element={<Accessories />} />
@@ -63,6 +65,10 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/help" element={<HelpForm />} />
         <Route path="/myorders" element={<MyOrders />} />
+        <Route path="/carcategory" element={<CarCategory />} />
+        <Route path="/bikecategory" element={<BikeCategory />} />
+
+
 
 
 

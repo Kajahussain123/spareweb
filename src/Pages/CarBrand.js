@@ -29,7 +29,7 @@ const CarBrand = () => {
       <div className="custom-bike-brand">
         <div className="custom-bike-list">
           {cars.map((car) => (
-            <Link to='/bikeyear' key={car.id} style={{ textDecoration: "none" }}>
+            <Link to='/caryear' key={car.id} style={{ textDecoration: "none" }}>
               <div className="custom-bike-card">
                 <img src={car.image} alt={car.name} className="custom-bike-image" />
                 <h3>{car.name}</h3>

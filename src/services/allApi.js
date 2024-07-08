@@ -89,3 +89,23 @@ export const fetchBikeAccessories = async () => {
       return []; // Handle error appropriately
   }
 };
+
+// get car category 
+export const CarCategories = async (body) => {
+  return await commonApi("GET", `${BASE_URL}/api/categories-view/1/`, body, "");
+};
+
+// get bike category 
+export const BikeCategories = async (body) => {
+  return await commonApi("GET", `${BASE_URL}/api/categories-view/2/`, body, "");
+};
+
+export const fetchAds = async () => {
+  try {
+    const response = await axios.get(`${BASE_URL}/api/CarouselImage/`);
+    return response.data;
+  } catch (error) {
+    console.error('Error fetching ads:', error);
+    throw error;
+  }
+};

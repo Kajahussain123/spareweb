@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NavbarComponent from '../Components/Navbar'
 import './Home.css'
 import Slider from 'react-slick';
@@ -7,7 +7,24 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Card, Carousel, Col, Container, Row } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { fetchAds } from '../services/allApi';
 function Home() {
+  const [ads, setAds] = useState([]);
+
+  useEffect(() => {
+    const getAds = async () => {
+      try {
+        const data = await fetchAds();
+        setAds(data);
+      } catch (error) {
+        console.error('Error fetching ads:', error);
+      }
+    };
+
+    getAds();
+  }, []);
+
+
   const categories = [
     { name: 'Engine', icon: 'https://i.postimg.cc/vZd7Wgqz/7188c353f3379f392f606fcd9c3ecc40.png' },
     { name: 'Gearbox', icon: 'https://i.postimg.cc/Dy5fcR5M/66f0e5af51608283fcd62cb726f62d36.png' },
@@ -171,20 +188,15 @@ function Home() {
       {/* carousel */}
 
       <center> <div className="carousel-container mt-5">
-        <Slider {...settings}>
-          <div className='slid'>
-            <center>  <img className='mainimg' src="https://i.postimg.cc/DZ9rz8RR/dd27ff13f17623b463c00b07971a794c.jpg" alt="" /></center>
-          </div>
-          <div className='slid'>
-            <center>  <img className='mainimg' src="https://i.postimg.cc/HLCrQQVV/de06b376842c42f0c404726cd9c4c79e.jpg" alt="" /></center>
-          </div>
-          <div className='slid'>
-            <center>  <img className='mainimg' src="https://i.postimg.cc/cLfH4rXZ/7165427ca77deed9db56253c3c7c5bf5.jpg" alt="" /></center>
-          </div>
-          <div className='slid'>
-            <center>  <img className='mainimg' src="https://i.postimg.cc/pTLXZkxX/c7b1e48cca6b994561cf6e76325f4088.jpg" alt="" /></center>
-          </div>
-        </Slider>
+      <Slider {...settings}>
+            {ads.map((ad) => (
+              <div key={ad.id} className='slid'>
+                <center>
+                  <img className='mainimg' style={{width:"300px",height:"100px"}} src={ad.image} alt={ad.title || 'Advertisement'} />
+                </center>
+              </div>
+            ))}
+          </Slider>
 
       </div></center>
       {/*  */}
