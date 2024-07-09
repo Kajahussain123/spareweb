@@ -1,4 +1,4 @@
-/* aside {
+aside {
     flex: 7 0 280px;
     min-width: 360px;
   }
@@ -60,4 +60,4 @@
   }
   aside li.active a {
     color: #00A0E0;
-  } */
+  }

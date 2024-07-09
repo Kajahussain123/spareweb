@@ -192,7 +192,7 @@ function Home() {
             {ads.map((ad) => (
               <div key={ad.id} className='slid'>
                 <center>
-                  <img className='mainimg' style={{width:"300px",height:"100px"}} src={ad.image} alt={ad.title || 'Advertisement'} />
+                 <img className='mainimg' style={{width:"300px",height:"100px"}} src={ad.image} alt={ad.title || 'Advertisement'} />
                 </center>
               </div>
             ))}

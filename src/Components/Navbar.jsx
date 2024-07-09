@@ -87,7 +87,7 @@ const NavbarComponent = () => {
             <FaRegUserCircle />
           </Dropdown.Toggle>
           <Dropdown.Menu align="end" className="custom-dropdown-menu">
-            <Dropdown.Item href="#/profile"> <FaRegUserCircle /> My Profile</Dropdown.Item>
+            <Link to={'/profile'} style={{textDecoration:"none"}}><Dropdown.Item href="#/profile"> <FaRegUserCircle /> My Profile</Dropdown.Item></Link>
             <Link to={'/myorders'} style={{textDecoration:"none"}}><Dropdown.Item href="#/orders"><TbShoppingCartSearch /> Orders</Dropdown.Item></Link>
             <Dropdown.Item href="#/gift-cards"><GoGift /> Gift Cards</Dropdown.Item>
             <Link to={'/help'} style={{textDecoration:"none"}}><Dropdown.Item href="#/help-center"><MdHelpOutline /> Help Center</Dropdown.Item></Link>

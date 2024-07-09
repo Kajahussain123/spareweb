@@ -1,4 +1,4 @@
-/* 
+
 
 .profile-app {
   font-family: Arial, sans-serif;
@@ -8,7 +8,7 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-main {
+.mainn {
   display: flex;
   padding: 2rem;
   gap: 2rem;
@@ -101,7 +101,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-input {
+.inputss {
   width: 100%;
   padding: 0.5rem;
   border: 1px solid #ccc;
@@ -151,7 +151,7 @@ input {
   color: #555;
 }
 
-.profile-info-card input {
+.profile-info-card .inputss {
   width: 70%;
   max-width: 300px;
   padding: 0.75rem;
@@ -162,7 +162,7 @@ input {
   background-color: #F5F5F5;
 }
 
-.profile-info-card input::placeholder {
+.profile-info-card .inputss::placeholder {
   color: #888;
 }
 
@@ -207,7 +207,7 @@ input {
 }
 
 @media (max-width: 768px) {
-  main {
+  .mainn {
       flex-direction: column;
   }
   aside {
@@ -226,4 +226,4 @@ input {
   .profile-info-card .profile-form-group {
       width: 157%;
   }
-} */
+}
